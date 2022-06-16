@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+//components
+import Header from "./components/Header/";
+import SearchModal from "./components/SearchModal/SearchModal";
+import LoginForm from "./components/LoginForm/";
+
+//styles
+import "./App.css";
 
 function App() {
+  const [activeModalSearch, setActiveModalSearch] = useState(false);
+  const [activeModalLogin, setActiveModalLogin] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="home__wrapper">
+      <Header
+        setActiveModalSearch={setActiveModalSearch}
+        setActiveModalLogin={setActiveModalLogin}
+      />
+      {activeModalSearch && (
+        <SearchModal setActiveModalSearch={setActiveModalSearch} />
+      )}
+      {activeModalLogin && (
+        <LoginForm setActiveModalLogin={setActiveModalLogin} />
+      )}
     </div>
   );
 }
