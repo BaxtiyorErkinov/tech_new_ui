@@ -1,6 +1,4 @@
 .mustreadnews__container {
-	border: 1px solid #EFEFEF;
-	padding: 30px;
 	.mustreadnews__actions { 
 		display: flex;
 		justify-content: space-between;
@@ -49,7 +47,7 @@
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					border-radius: 5px;
+					border-radius: 3px;
 					border: 1px solid #EFEFEF;
 				}
 				&-left {
