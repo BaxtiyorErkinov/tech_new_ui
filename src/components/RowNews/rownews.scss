@@ -1,0 +1,83 @@
+.rownews__container {
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("https://jannah.tielabs.com/jannah-tech/wp-content/uploads/sites/10/2016/10/block-light-bg-1-min.png");
+    padding: 30px 80px;
+
+    @media screen and (max-width: 520px) {
+        padding: 30px 30px;
+    }
+
+    .rownews__item {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            z-index: 100;
+            transform: translateY(50px);
+            transition: transform .3s ease-in-out;
+
+            @media screen and (min-width: 521px) and (max-width: 768px) {
+                transform: translateY(65px);
+
+                &.last {
+                    transform: translateY(30px);
+                }
+            }
+
+            .date {
+                color: #fff;
+                font-size: 14px;
+                font-family: Ubuntu;
+            }
+
+            .title {
+                margin-top: 10px;
+                font-size: 18px;
+                font-weight: 600;
+                font-family: Ubuntu;
+                color: #fff;
+                margin-bottom: 10px;
+            }
+
+            .desc {
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+
+        &:hover .content {
+            transform: translate(0);
+            transition: transform .3s ease-in-out;
+        }
+    }
+}

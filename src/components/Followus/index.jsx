@@ -1,5 +1,5 @@
 import React from "react";
-import Box from '../../UI/Box/'
+import Box from "../../UI/Box/";
 
 //icons
 import { BsFacebook, BsTwitter, BsYoutube } from "react-icons/bs";

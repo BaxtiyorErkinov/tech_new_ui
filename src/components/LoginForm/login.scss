@@ -1,10 +1,12 @@
 .loginmodal__wrapper {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	background: rgba(10, 8, 8, .9);
+	z-index: 500;
+	overflow: hidden;
 
 	.loginmodal-closebtn {
 		position: absolute;

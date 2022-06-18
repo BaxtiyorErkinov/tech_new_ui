@@ -1,6 +1,7 @@
 .mostviewved__container {
 	// position: relative;
 	padding-bottom: 15px;
+
 	.mostviewed__title {
 		display: flex;
 		justify-content: space-between;
@@ -8,15 +9,18 @@
 		padding-bottom: 10px;
 		border-bottom: 3px solid #0A9E01;
 		margin-bottom: 10px;
+
 		.title {
 			font-size: 20px;
 			font-weight: 600;
 			color: #0A9E01;
 			font-family: Ubuntu;
 		}
+
 		.actions {
 			display: flex;
 			column-gap: 10px;
+
 			button {
 				border: 1px solid #EFEFEF;
 				outline: none;
@@ -24,30 +28,32 @@
 				border-radius: 3px;
 				cursor: pointer;
 			}
-			&__btn-left {
 
-			}
-			&__btn-right {
+			&__btn-left {}
 
-			}
+			&__btn-right {}
 		}
 	}
+
 	.swiper {
 		width: 100%;
 		// max-width: 100%;
-  		height: 100%;
+		height: 100%;
 		position: static;
 		display: flex;
 	}
+
 	.swiper-slide {
 		max-width: 230px;
 		min-width: 230px;
 		font-size: 18px;
 	}
+
 	.swiper-slide img {
 		// width: 100%;
 		// height: 100%;
 	}
+
 	.pagination-el {
 		position: absolute;
 		bottom: 15px;
@@ -57,44 +63,54 @@
 		width: 100%;
 		z-index: 150;
 	}
+
 	.swiper-pagination-bullet {
 		padding: 5px;
 	}
+
 	.swiper-pagination-bullet-active {
 		background: #0A9E01 !important;
 		padding: 6px;
 	}
+
 	.slide__item {
 		width: 230px;
+
 		.banner {
 			width: 230px;
 			height: 130px;
-			img{
+
+			img {
 				width: 100%;
 				height: 100%;
 			}
 		}
+
 		.content {
+
 			// margin-top: 10px;
 			.info {
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
+
 				.date {
 					display: flex;
 					align-items: center;
 					font-size: 12px;
-					color: #6F7378;	
+					color: #6F7378;
 					line-height: 30px;
 					column-gap: 5px;
+
 					svg {
 						font-size: 16px;
 					}
 				}
+
 				.right__section {
 					display: flex;
 					align-items: center;
-					color: #6F7378;	
+					color: #6F7378;
 					line-height: 30px;
 					column-gap: 5px;
 
@@ -107,17 +123,20 @@
 							font-size: 16px;
 						}
 					}
+
 					.popularity {
 						display: flex;
 						align-items: center;
 						font-size: 12px;
 						color: red;
+
 						svg {
 							font-size: 16px;
 						}
 					}
 				}
 			}
+
 			.title {
 				color: #000;
 				font-weight: bold;
@@ -127,6 +146,7 @@
 		}
 	}
 }
+
 // .swiper-container {
 //   width: 100%;
 // }

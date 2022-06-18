@@ -7,8 +7,7 @@ import "swiper/scss/effect-fade";
 import "swiper/scss/navigation";
 import { Grid } from "@mui/material";
 import CircularProgressBar from "../CircularProgressBar/";
-import Box from '../../UI/Box/'
-
+import Box from "../../UI/Box/";
 
 //icons
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";

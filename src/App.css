@@ -6,7 +6,7 @@
 	padding: 30px 80px;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
 	.main__section {
 		padding: 30px 10px;
 	}

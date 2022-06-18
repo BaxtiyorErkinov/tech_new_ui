@@ -1,0 +1,233 @@
+.headphonesnews__container {
+	.headphonesnews__title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 10px;
+		border-bottom: 3px solid #514748;
+
+		.title {
+			font-size: 18px;
+			font-weight: 600;
+			color: #514748;
+			font-family: Ubuntu;
+
+		}
+
+		.actions {
+			display: flex;
+			column-gap: 10px;
+
+			button {
+				border: 1px solid #EFEFEF;
+				outline: none;
+				padding: 3px 5px;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.swiper {
+		// position: relative;
+	}
+
+	.swiper-slide {
+		padding: 20px 0;
+	}
+
+	.headphonesnews__wrapper {
+		.main__new {
+			.banner {
+				width: 100%;
+				height: 150px;
+				position: relative;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+
+				.zap {
+					position: absolute;
+					top: -15px;
+					left: 25px;
+					width: 35px;
+					height: 35px;
+					border-radius: 100%;
+					background: #F64E4E;
+					color: #fff;
+					font-size: 18px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					z-index: 150;
+				}
+
+				.category {
+					position: absolute;
+					bottom: 10px;
+					right: 10px;
+					background: #F48938;
+					color: #fff;
+					font-size: 14px;
+					padding: 3px 5px;
+					border-radius: 3px;
+					font-weight: 400;
+
+				}
+			}
+
+			.content {
+				.info {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					margin: 10px 0;
+
+					.left__section {
+						display: flex;
+						align-items: center;
+						column-gap: 10px;
+						line-height: 20px;
+
+						.user {
+							font-size: 12px;
+							display: flex;
+							align-items: center;
+							column-gap: 5px;
+							color: #6F7378;
+
+							svg {
+								font-size: 16px;
+							}
+						}
+
+						.date {
+							font-size: 12px;
+							display: flex;
+							align-items: center;
+							column-gap: 5px;
+							color: #6F7378;
+
+							svg {
+								font-size: 16px;
+							}
+						}
+					}
+
+					.right__section {
+						display: flex;
+						align-items: center;
+						column-gap: 10px;
+						line-height: 20px;
+
+						.comments {
+							font-size: 12px;
+							display: flex;
+							align-items: center;
+							column-gap: 5px;
+							color: #6F7378;
+
+							svg {
+								font-size: 16px;
+							}
+						}
+
+						.popularity {
+							font-size: 12px;
+							display: flex;
+							align-items: center;
+							column-gap: 5px;
+							color: red;
+
+							svg {
+								font-size: 16px;
+							}
+						}
+					}
+				}
+
+				.title {
+					font-weight: 600;
+					font-size: 18px;
+					color: #000;
+					font-family: Ubuntu;
+					margin-bottom: 15px;
+					transition: all .3s;
+					cursor: pointer;
+
+				}
+
+				.desc {
+					font-size: 13px;
+					font-family: sans-serif;
+					color: #6F7378;
+					margin-bottom: 15px;
+
+
+				}
+
+				.readmore {
+					width: 120px;
+					height: 35px;
+					display: flex;
+					justify-content: space-evenly;
+					align-items: center;
+					background: #514748;
+					color: #fff;
+					padding: 0 5px;
+					border: none;
+					outline: none;
+					border-radius: 2px;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.other__news {
+			&__item {
+				display: flex;
+				column-gap: 10px;
+				margin-top: 15px;
+
+				.banner {
+					width: 35%;
+					height: 70px;
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+				.content {
+					.title {
+						font-size: 14px;
+						font-weight: bold;
+						font-family: Ubuntu;
+						color: #000;
+						transition: all .3s;
+						cursor: pointer;
+					}
+
+					.date {
+						display: flex;
+						align-items: center;
+						column-gap: 5px;
+						font-size: 12px;
+						line-height: 20px;
+						color: #6F7378;
+						margin-top: 5px;
+
+						svg {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
