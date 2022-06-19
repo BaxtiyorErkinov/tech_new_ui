@@ -27,6 +27,12 @@
 				padding: 3px 5px;
 				border-radius: 3px;
 				cursor: pointer;
+				transition: all .3s;
+				&:hover {
+					transition: all .3s;
+					background: #0A9E01;
+					color: #fff;
+				}
 			}
 
 			&__btn-left {}
@@ -142,6 +148,12 @@
 				font-weight: bold;
 				font-family: Ubuntu;
 				font-size: 16px;
+				cursor: pointer;
+				transition: all .3s;
+				&:hover {
+					transition: all .3s;
+					color: #0A9E01;
+				}
 			}
 		}
 	}

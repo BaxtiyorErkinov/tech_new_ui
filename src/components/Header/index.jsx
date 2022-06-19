@@ -1,5 +1,5 @@
 //packages
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 //components
 import LinkItems from "./LinkItems";
@@ -22,10 +22,11 @@ import { AiOutlineClose } from "react-icons/ai";
 //styles
 import "./header.scss";
 
-const Header = ({ setActiveModalSearch, setActiveModalLogin }) => {
+const Header = ({ setActiveModalSearch, setActiveModalLogin, scrolling }) => {
   const [isActiveMenu, setIsActiveMenu] = useState(false);
+
   return (
-    <header>
+    <header className={`${scrolling ? "fixed" : ""}`}>
       <div className="header__container">
         <span className="toggle-btn" onClick={() => setIsActiveMenu(true)}>
           <BiMenu />
@@ -122,9 +123,6 @@ const Header = ({ setActiveModalSearch, setActiveModalLogin }) => {
               onClick={() => setActiveModalLogin(true)}
             >
               <FaUserCircle />
-            </span>
-            <span className="components-menu">
-              <BiMenu />
             </span>
             <span
               className="components-search"

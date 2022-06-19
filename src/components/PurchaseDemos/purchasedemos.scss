@@ -1,0 +1,58 @@
+.purchasedemos__container {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	width: 78px;
+	height: 100px;
+	z-index: 150;
+	transform: translateY(-50%);
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+
+	.items {
+		.item1 {
+			height: 70px;
+			padding: 15px 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			background: rgba(#3BB134, 0.9);
+
+			.count {
+				color: #fff;
+				font-size: 25px;
+				font-weight: bold;
+			}
+
+			.text {
+				color: #fff;
+				font-family: Ubuntu;
+				font-size: 10px;
+			}
+		}
+
+		.item2 {
+			height: 70px;
+			padding: 15px 0;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			background: rgba(#777777, .9);
+			margin-top: 3px;
+
+			.icon {
+				font-size: 25px;
+				color: #fff;
+			}
+
+			.text {
+				color: #fff;
+				font-family: Ubuntu;
+				font-size: 10px;
+			}
+		}
+	}
+}

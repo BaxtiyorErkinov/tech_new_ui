@@ -57,6 +57,13 @@
 					font-weight: 600;
 					color: #000;
 					margin-top: 10px;
+					cursor: pointer;
+					transition: all .3s;
+
+					&:hover {
+						transition: all .3s;
+						color: #0A9E01;
+					}
 				}
 
 				.date {
@@ -99,6 +106,13 @@
 						font-weight: 600;
 						font-family: Ubuntu;
 						font-size: 14px;
+						cursor: pointer;
+						transition: all .3s;
+
+						&:hover {
+							transition: all .3s;
+							color: #0A9E01;
+						}
 					}
 
 					.date {

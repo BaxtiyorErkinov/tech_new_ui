@@ -1,109 +1,112 @@
-.headphonesnews__container {
-	.headphonesnews__title {
+.sciencenews__container {
+	.sciencenews__title {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding-bottom: 10px;
-		border-bottom: 3px solid #514748;
+		border-bottom: 3px solid #0A9E01;
 
 		.title {
-			font-size: 18px;
+			color: #0A9E01;
 			font-weight: 600;
-			color: #514748;
 			font-family: Ubuntu;
-
+			font-size: 18px;
 		}
 
 		.actions {
 			display: flex;
+			align-items: center;
 			column-gap: 10px;
 
-			button {
+			&__btn {
 				border: 1px solid #EFEFEF;
-				outline: none;
-				padding: 3px 5px;
+				width: 25px;
+				height: 25px;
 				border-radius: 3px;
-				cursor: pointer;
+				font-size: 13px;
+				color: #000;
 				transition: all .3s;
+				cursor: pointer;
 
 				&:hover {
+					background: #0A9E01;
 					color: #fff;
-					background: #514748;
 					transition: all .3s;
 				}
 			}
 		}
 	}
 
-	.swiper {
-		// position: relative;
-	}
+	.sciencenews {
+		display: flex;
+		column-gap: 10px;
+		margin-top: 20px;
 
-	.swiper-slide {
-		padding: 20px 0;
-	}
+		@media screen and (max-width: 520px) {
+			flex-direction: column;
+		}
 
-	.headphonesnews__wrapper {
 		.main__new {
+			min-width: 50%;
+
+			@media screen and (max-width: 520px) {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+
 			.banner {
 				width: 100%;
-				height: 150px;
+				height: 200px;
 				position: relative;
 
 				img {
 					width: 100%;
 					height: 100%;
-					object-fit: cover;
 				}
 
 				.zap {
 					position: absolute;
 					top: -15px;
-					left: 25px;
+					left: 15px;
 					width: 35px;
 					height: 35px;
-					border-radius: 100%;
-					background: #F64E4E;
-					color: #fff;
+					background: #F64F4F;
 					font-size: 18px;
+					color: #fff;
+					border-radius: 100%;
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					z-index: 150;
 				}
 
 				.category {
 					position: absolute;
 					bottom: 10px;
 					right: 10px;
-					background: #F48938;
+					padding: 5px 5px;
+					background: #0A6B7F;
 					color: #fff;
 					font-size: 14px;
-					padding: 3px 5px;
 					border-radius: 3px;
-					font-weight: 400;
-
 				}
 			}
 
 			.content {
 				.info {
 					display: flex;
-					align-items: center;
 					justify-content: space-between;
-					margin: 10px 0;
+					padding: 5px 0;
 
-					.left__section {
+					.user__info {
 						display: flex;
-						align-items: center;
 						column-gap: 10px;
 						line-height: 20px;
 
 						.user {
-							font-size: 12px;
 							display: flex;
 							align-items: center;
 							column-gap: 5px;
+							font-size: 12px;
 							color: #6F7378;
 
 							svg {
@@ -112,10 +115,10 @@
 						}
 
 						.date {
-							font-size: 12px;
 							display: flex;
 							align-items: center;
 							column-gap: 5px;
+							font-size: 12px;
 							color: #6F7378;
 
 							svg {
@@ -126,15 +129,14 @@
 
 					.right__section {
 						display: flex;
-						align-items: center;
 						column-gap: 10px;
 						line-height: 20px;
 
 						.comments {
-							font-size: 12px;
 							display: flex;
 							align-items: center;
 							column-gap: 5px;
+							font-size: 12px;
 							color: #6F7378;
 
 							svg {
@@ -143,10 +145,10 @@
 						}
 
 						.popularity {
-							font-size: 12px;
 							display: flex;
 							align-items: center;
 							column-gap: 5px;
+							font-size: 12px;
 							color: red;
 
 							svg {
@@ -157,38 +159,40 @@
 				}
 
 				.title {
+					font-size: 20px;
 					font-weight: 600;
-					font-size: 18px;
-					color: #000;
 					font-family: Ubuntu;
-					margin-bottom: 15px;
-					transition: all .3s;
+					color: #000;
+					margin: 5px 0;
 					cursor: pointer;
 
+					&:hover {
+						transition: all .3s;
+						color: #0A9E01;
+					}
 				}
 
 				.desc {
-					font-size: 13px;
-					font-family: sans-serif;
+					font-size: 14px;
 					color: #6F7378;
-					margin-bottom: 15px;
-
-
+					margin-bottom: 10px;
 				}
 
 				.readmore {
-					width: 120px;
+					width: 100px;
 					height: 35px;
 					display: flex;
-					justify-content: space-evenly;
+					justify-content: center;
 					align-items: center;
-					background: #514748;
 					color: #fff;
-					padding: 0 5px;
+					background: #0A9E01;
+					border-radius: 3px;
 					border: none;
-					outline: none;
-					border-radius: 2px;
 					cursor: pointer;
+
+					svg {
+						margin-left: 5px;
+					}
 				}
 			}
 		}
@@ -197,10 +201,15 @@
 			&__item {
 				display: flex;
 				column-gap: 10px;
-				margin-top: 15px;
+				margin-bottom: 25px;
+				align-items: center;
+
+				&:nth-child(4) {
+					margin-bottom: 0;
+				}
 
 				.banner {
-					width: 35%;
+					min-width: 30%;
 					height: 70px;
 
 					img {
@@ -210,31 +219,35 @@
 				}
 
 				.content {
-					.title {
-						font-size: 14px;
-						font-weight: bold;
-						font-family: Ubuntu;
-						color: #000;
-						transition: all .3s;
-						cursor: pointer;
-					}
-
 					.date {
 						display: flex;
 						align-items: center;
 						column-gap: 5px;
 						font-size: 12px;
+						color: #000;
 						line-height: 20px;
-						color: #6F7378;
-						margin-top: 5px;
 
 						svg {
-							font-size: 14px;
+							font-size: 16px;
+						}
+					}
+
+					.title {
+						font-weight: 600;
+						font-family: Ubuntu;
+						font-size: 15px;
+						color: #000;
+						margin-top: 5px;
+						cursor: pointer;
+						transition: all .3s;
+
+						&:hover {
+							transition: all .3s;
+							color: #0A9E01;
 						}
 					}
 				}
 			}
 		}
 	}
-
 }

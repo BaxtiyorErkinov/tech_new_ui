@@ -60,6 +60,13 @@
 					font-weight: bold;
 					font-family: Ubuntu;
 					color: #000;
+					cursor: pointer;
+					transition: all .3s;
+
+					&:hover {
+						transition: all .3s;
+						color: #0A9E01;
+					}
 				}
 
 				.date {

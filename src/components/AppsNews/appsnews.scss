@@ -24,6 +24,13 @@
 				padding: 3px 5px;
 				border-radius: 3px;
 				cursor: pointer;
+				transition: all .3s;
+
+				&:hover {
+					background: #F48938;
+					color: #fff;
+					transition: all .3s;
+				}
 			}
 		}
 	}
